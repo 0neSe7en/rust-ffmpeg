@@ -707,7 +707,7 @@ impl Into<AVPixelFormat> for Pixel {
 			#[cfg(feature = "ff_api_vaapi")]
 			Pixel::VAAPI_VLD => AV_PIX_FMT_VAAPI_VLD,
 			#[cfg(not(feature = "ff_api_vaapi"))]
-			Pixel::VAAPI => AV_PIX_FMT_VAAPI,
+			Pixel::VAAPI => AV_PIX_FMT_VAAPI_VLD,
 
 			Pixel::YUV420P16LE => AV_PIX_FMT_YUV420P16LE,
 			Pixel::YUV420P16BE => AV_PIX_FMT_YUV420P16BE,

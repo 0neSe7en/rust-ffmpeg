@@ -12,7 +12,7 @@ repository  = "https://github.com/meh/rust-ffmpeg"
 keywords    = ["audio", "video"]
 
 [features]
-default = ["codec", "device", "filter", "format", "resampling", "software-scaling"]
+default = ["static", "codec", "filter", "format"]
 unstable = []
 serde = ["serde_", "serde_derive", "ffmpeg-sys/serde"]
 
@@ -119,7 +119,9 @@ version  = "0.23"
 optional = true
 
 [dependencies.ffmpeg-sys]
-version = "4.3.3"
+git = "https://github.com/0neSe7en/rust-ffmpeg-sys"
+branch = "wasm"
+#version = "4.3.3"
 default-features = false
 
 [dependencies.log]
