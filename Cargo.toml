@@ -120,7 +120,7 @@ optional = true
 
 [dependencies.ffmpeg-sys]
 git = "https://github.com/0neSe7en/rust-ffmpeg-sys"
-branch = "wasm"
+branch = "wasm-emscripten"
 #version = "4.3.3"
 default-features = false
 
